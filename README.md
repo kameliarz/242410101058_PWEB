@@ -2,7 +2,7 @@
 
 Weekly assignments and progress for Web Programming class.
 
-<img align="right" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f43f_fe0f/512.gif" alt="🐿" width="200">
+<img align="right" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f43f_fe0f/512.gif" alt="🐿" width="70">
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 
