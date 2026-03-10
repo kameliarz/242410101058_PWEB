@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Kamelia">
+        <meta name="description" content="This is the homepage of Gettin">
+        <title>Gettin</title>
+        <link rel="icon" href="gettin-icon.ico" type="image/x-icon">  
+    </head>
+    <body>
+        <header>
+            <h1>Selamat Datang di Gettin</h1>
+            <nav aria-labelledby="primary-navigation">
+                <ul>
+                    <li> <a href="#about">Tentang</a> </li>
+                    <li> <a href="#menu">Katalog Produk</a> </li>
+                    <li> <a href="#keranjang">Keranjang</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <h3>Statistik</h3>
+            <p>Total Produk di Keranjang: 3</p>
+            <p>Pesanan Aktif: 1</p>
+            <p>Pre-Order Hari Ini: 1</p>
+            <p>Total Transaksi: 12</p>
+        </aside>
+
+        <main>
+            <article id="about">
+                <h2>Tentang <abbr title="Gettin">Gettin</abbr></h2>
+                <section>
+                    <p>
+                        <abbr title="Get Kantin">Gettin</abbr> adalah sistem pemesanan makanan berbasis web yang memudahkan pelanggan
+                            untuk melihat katalog menu, mengetahui harga dan ketersediaan stok, serta
+                            melakukan pemesanan secara pre-order. Melalui sistem ini, pelanggan dapat
+                            menambahkan produk ke keranjang hingga menentukan waktu pengambilan pesanan.
+                    </p>
+                </section>
+            </article>
+
+            <article id="menu">
+                <h2>Katalog Produk</h2>
+
+                <h3>Nasi Goreng</h3>
+                <figure>
+                    <img src="img/nasi-goreng.jpg" alt="Nasi Goreng" title="Nasi goreng" width="150">
+                </figure>
+                <p>Harga: Rp11.000</p>
+                <p>Stok: 10</p>
+                <label>Pesan:</label>
+                <input type="number" min="1" max="10" value="0">
+                <br><br>
+                <button>Tambah ke Keranjang</button>
+
+                <h3>Ayam Geprek</h3>
+                <figure>
+                    <img src="img/ayam-geprek.jpg" alt="Ayam Geprek" title="Ayam geprek" width="150">
+                </figure>
+                <p>Harga: Rp10.000</p>
+                <p>Stok: 8</p>
+                <input type="number" min="1" max="10" value="0">
+                <br><br>
+                <button>Tambah ke Keranjang</button>
+
+                <h3>Nasi Rawon</h3>
+                <figure>
+                    <img src="img/nasi-rawon.jpg" alt="Nasi Rawon" title="Nasi rawon" width="150">
+                </figure>
+                <p>Harga: Rp8.000</p>
+                <p>Stok: 20</p>
+                <input type="number" min="1" max="10" value="0">
+                <br><br>
+                <button>Tambah ke Keranjang</button>
+
+                <h3>Nasi Gila</h3>
+                <figure>
+                    <img src="img/nasi-gila.jpg" alt="Nasi Gila" title="Nasi gila" width="150">
+                </figure>
+                <p>Harga: Rp10.000</p>
+                <p>Stok: 16</p>
+                <input type="number" min="1" max="10" value="0">
+                <br><br>
+                <button>Tambah ke Keranjang</button>
+            </article>
+
+            <article id="keranjang">
+                <h2>Keranjang</h2>
+
+                <table border="1">
+                <tr>
+                <th>Nama Produk</th>
+                <th>Harga</th>
+                <th>Jumlah</th>
+                <th>Subtotal</th>
+                </tr>
+
+                <tr>
+                <td>Nasi Goreng</td>
+                <td>Rp11.000</td>
+                <td>1</td>
+                <td>Rp11.000</td>
+                </tr>
+
+                <tr>
+                <td>Nasi Rawon</td>
+                <td>Rp8.000</td>
+                <td>2</td>
+                <td>Rp16.000</td>
+                </tr>
+
+                <tr>
+                <td colspan="3"><b>Total</b></td>
+                <td><b>Rp27.000</b></td>
+                </tr>
+                </table>
+
+                <br>
+
+                <button>Ubah Jumlah</button>
+                <button>Hapus Produk</button>
+                <button>Lanjut Pre-Order</button>
+            </article>
+        </main>
+        <br><br><br>
+        <footer>
+            <p> <a href="#">Back to Top</a> </p>
+            <hr>
+            <p> Copyright &copy; Gettin - Sistem Pre Order Makanan Kantin</p>
+            <p>By Kamelia</p>
+        </footer>
+    </body>
 </html>
