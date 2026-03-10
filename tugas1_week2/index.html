@@ -9,20 +9,22 @@
     </head>
     <body>
         <header>
+            <img src="gettin-icon.ico" alt="Logo Gettin"> Gettin
             <h1>Selamat Datang di Gettin</h1>
             <nav aria-labelledby="primary-navigation">
                 <ul>
                     <li> <a href="#about">Tentang</a> </li>
                     <li> <a href="#menu">Katalog Produk</a> </li>
                     <li> <a href="#keranjang">Keranjang</a> </li>
+                    <li> <a href="#contact">Kontak</a> </li>
                 </ul>
             </nav>
         </header>
         <aside>
             <h3>Statistik</h3>
-            <p>Total Produk di Keranjang: 3</p>
-            <p>Pesanan Aktif: 1</p>
-            <p>Pre-Order Hari Ini: 1</p>
+            <p>Total Produk di Keranjang: 2</p>
+            <p>Pesanan Aktif: 0</p>
+            <p>Pre-Order Hari Ini: 0</p>
             <p>Total Transaksi: 12</p>
         </aside>
 
@@ -59,6 +61,7 @@
                 </figure>
                 <p>Harga: Rp10.000</p>
                 <p>Stok: 8</p>
+                <label>Pesan:</label>
                 <input type="number" min="1" max="10" value="0">
                 <br><br>
                 <button>Tambah ke Keranjang</button>
@@ -69,6 +72,7 @@
                 </figure>
                 <p>Harga: Rp8.000</p>
                 <p>Stok: 20</p>
+                <label>Pesan:</label>
                 <input type="number" min="1" max="10" value="0">
                 <br><br>
                 <button>Tambah ke Keranjang</button>
@@ -79,6 +83,7 @@
                 </figure>
                 <p>Harga: Rp10.000</p>
                 <p>Stok: 16</p>
+                <label>Pesan:</label>
                 <input type="number" min="1" max="10" value="0">
                 <br><br>
                 <button>Tambah ke Keranjang</button>
@@ -120,6 +125,29 @@
                 <button>Ubah Jumlah</button>
                 <button>Hapus Produk</button>
                 <button>Lanjut Pre-Order</button>
+            </article>
+            <br><br><br>
+            <article id="contact">
+                <h3>Kontak kami</h3>
+                <form action="htt"></form>
+                <fieldset>
+                    <legend>Kirim Kami Pesan</legend>
+                    <p>
+                        <label for="name">Nama :</label>
+                        <input type="text" name="nama" id="nama" placeholder="nama anda">
+                    </p>
+                    <p>
+                        <label for="name">Email :</label>
+                        <input type="text" name="email" id="email" placeholder="email anda">
+                    </p>
+                    <p>
+                        <label for="message">Pesan :</label>
+                        <br>
+                        <textarea name="message" id="message" placeholder="ketik pesan anda disini" cols="30" rows="10"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
             </article>
         </main>
         <br><br><br>
