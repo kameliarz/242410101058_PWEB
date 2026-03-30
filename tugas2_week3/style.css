@@ -1,5 +1,6 @@
 *{
     font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
 }
 
 header{
@@ -74,23 +75,38 @@ header{
   opacity: 0.8;
 }
 
-.about{
+.hero{
     font-size: 20px;
     padding: 80px 180px;
-}
+    background: linear-gradient(#ffffff, hsla(36, 86%, 60%, 0.644));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .overlay {
+    background: linear-gradient(hsl(32, 90%, 12%, 0.8), hsl(0, 0%, 15%, 0.8));
+    color:#ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+  }
 
-.menu-populer{
+  .menu-populer{
     background-color: #262626;
     padding: 10px 180px 40px;
   }
   
-.menu-populer h2{
-  color:white;
+  .menu-populer h2{
+    color:white;
+
 }
   
   .menu-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
     gap: 30px;
     padding: 10px 20px;
   }
@@ -113,6 +129,10 @@ header{
     width: 150px;
     height: 150px
   }
+
+  .card:hover{
+    background-color:#e6e0e0;
+  }
   
   .nama-kantin {
     color: #FB5800;
@@ -124,15 +144,12 @@ header{
     margin-right: auto;
   }
   
-  /* main{
-    margin: 10px 78px;
-    padding: 3px 20px;
-  } */
-  
 .cara-kerja{
-  padding: 3px 98px;
+    padding: 3px 98px;
     background-color: #e7e7e7;
     padding: 20px 180px 80px;
+    justify-content: center;
+    align-items: center;
 }
 
 .cara{
@@ -248,5 +265,27 @@ footer{
     .mysign{
       margin-top: 40px;
       text-align: center;
+    }
+    .hero{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .hero h2{
+      font-size: smaller;
+    }
+    
+    .menu-populer{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .cara-kerja{
+
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .cara{
+      flex-direction: column;
     }
 }
