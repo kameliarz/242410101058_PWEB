@@ -30,8 +30,78 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <p>Ini halaman menu.</p>
+        <main class="menu-page">
+            <section class="search-section">
+                <input type="text" placeholder="Cari menu..." class="search-input">
+                <button class="search-btn">Cari</button>
+            </section>
+
+            <div class="menu-layout">
+
+                <aside class="sidebar">
+                    <h3>Filter</h3>
+
+                    <div class="filter-group">
+                        <h4>Kategori Menu</h4>
+                        <label><input type="checkbox"> Nasi</label>
+                        <label><input type="checkbox"> Ayam</label>
+                        <label><input type="checkbox"> Minuman</label>
+                        <label><input type="checkbox"> Snack</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Range Harga</h4>
+                        <label><input type="checkbox"> &lt; Rp10.000</label>
+                        <label><input type="checkbox"> Rp10.000 - Rp15.000</label>
+                        <label><input type="checkbox"> &gt; Rp15.000</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Kantin / Vendor</h4>
+                        <label><input type="checkbox"> Kantin Barokah</label>
+                        <label><input type="checkbox"> Kantin Sejahtera</label>
+                        <label><input type="checkbox"> Kantin Makmur</label>
+                    </div>
+
+                    <button class="reset-btn">Reset Filter</button>
+
+                </aside>
+
+                <section class="menu-content">
+                    <h2>Semua Menu</h2>
+
+                    <div class="menu-container">
+
+                        <article class="card">
+                            <img src="img/nasi-goreng.jpg">
+                            <p class="nama-kantin">Kantin Barokah</p>
+                            <p>Nasi Goreng</p>
+                            <p>Harga: Rp11.000</p>
+                        </article>
+
+                        <article class="card">
+                            <img src="img/ayam-geprek.jpg">
+                            <p class="nama-kantin">Kantin Barokah</p>
+                            <p>Ayam Geprek</p>
+                            <p>Harga: Rp10.000</p>
+                        </article>
+
+                        <article class="card">
+                            <img src="img/nasi-rawon.jpg">
+                            <p class="nama-kantin">Kantin Barokah</p>
+                            <p>Nasi Rawon</p>
+                            <p>Harga: Rp8.000</p>
+                        </article>
+
+                        <article class="card">
+                            <img src="img/nasi-gila.jpg">
+                            <p class="nama-kantin">Kantin Barokah</p>
+                            <p>Nasi Gila</p>
+                            <p>Harga: Rp10.000</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <p> <a href="#">Back to Top</a> </p><br>
