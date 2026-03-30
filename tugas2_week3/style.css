@@ -413,7 +413,7 @@ footer {
 
 .contact-container {
     display: flex;
-    flex-direction: column; /* Stack on mobile */
+    flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -550,8 +550,6 @@ footer {
         width: 300px;
     }
 }
-
-
 
 @media (min-width: 1070px) {
     .hero {
