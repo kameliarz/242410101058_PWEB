@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kamelia">
+    <meta name="description" content="This is the order page of Gettin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan - Gettin</title>
+    <link rel="icon" href="gettin-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="gettin-icon.ico" alt="Gettin Logo">
+                <p>Gettin</p>
+            </div>
+
+            <ul class="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="active"><a href="pesanan.html">Pesanan</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+
+            <div class="actions">
+                <a href="keranjang.html" class="cart-link" aria-label="Keranjang">
+                    <img src="shopping-cart.ico" alt="keranjang" width="25">
+                    <span class="cart-badge" data-cart-count>0</span>
+                </a>
+                <a href="inventory.html" class="profile-link" aria-label="Profil admin"><span class="profile-icon"></span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="order-page">
+        <h2>Riwayat Pesanan</h2>
+        <p class="subtitle">Lihat semua pesanan dan statusnya</p>
+
+        <section class="filter-bar">
+            <input type="text" placeholder="Cari ID invoice, menu, atau vendor..." class="search-input" id="order-search-input">
+
+            <select class="filter-select" id="order-status-filter">
+                <option>Semua Status</option>
+                <option>Diproses</option>
+                <option>Siap Diambil</option>
+                <option>Selesai</option>
+                <option>Dibatalkan</option>
+            </select>
+        </section>
+
+        <p class="result-info" id="order-result-info">0 pesanan ditampilkan</p>
+
+        <div class="table-container">
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tanggal &amp; Waktu</th>
+                        <th>Menu</th>
+                        <th>Kantin</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th>Ambil</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="order-table-body"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p><a href="#">Back to Top</a></p><br>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="gettin-icon.ico" alt="Gettin Logo">
+                    <p>Gettin</p>
+                </div>
+                <p>Pesan makananmu di kantin tanpa ribet antri</p>
+            </div>
+
+            <div class="footer-topright">
+                <div class="footer-nav">
+                    <h3>Navigation</h3>
+                    <a href="index.html">Beranda</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="inventory.html">Inventory</a>
+                    <a href="kontak.html">Kontak</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Jl. Kalimantan No.37, Sumbersari, Jember</p>
+                    <p>gettinmefood@gmail.com</p>
+                    <p>(201) 372-3702</p>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <div class="footer-bottom">
+            <p>© Copyright by Gettin 2026</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+        <p class="mysign">Crafted with ❤️ by Kamelia</p>
+    </footer>
+</body>
+</html>

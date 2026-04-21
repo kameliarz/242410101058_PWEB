@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kamelia">
+    <meta name="description" content="This is the menu of Gettin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gettin</title>
+    <link rel="icon" href="gettin-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="gettin-icon.ico" alt="Gettin Logo">
+                <p>Gettin</p>
+            </div>
+
+            <ul class="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li class="active"><a href="menu.html">Menu</a></li>
+                <li><a href="pesanan.html">Pesanan</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+
+            <div class="actions">
+                <a href="keranjang.html" class="cart-link" aria-label="Keranjang">
+                    <img src="shopping-cart.ico" alt="keranjang" width="25">
+                    <span class="cart-badge" data-cart-count>0</span>
+                </a>
+                <a href="inventory.html" class="profile-link" aria-label="Profil admin"><span class="profile-icon"></span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="menu-page">
+        <section class="search-section">
+            <input type="text" placeholder="Cari menu, vendor, atau kategori..." class="search-input" id="menu-search-input">
+            <button class="search-btn" id="menu-search-button" type="button">Cari</button>
+        </section>
+
+        <div class="menu-layout">
+            <aside class="sidebar">
+                <h3>Filter</h3>
+
+                <div class="filter-group">
+                    <h4>Kategori Menu</h4>
+                    <div id="category-filter-options"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Range Harga</h4>
+                    <label><input type="checkbox" class="price-filter" value="lt10000"> &lt; Rp10.000</label>
+                    <label><input type="checkbox" class="price-filter" value="10000to15000"> Rp10.000 - Rp15.000</label>
+                    <label><input type="checkbox" class="price-filter" value="gt15000"> &gt; Rp15.000</label>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Kantin / Vendor</h4>
+                    <div id="vendor-filter-options"></div>
+                </div>
+
+                <button class="reset-btn" id="reset-filter-button" type="button">Reset Filter</button>
+            </aside>
+
+            <section class="menu-content">
+                <h2>Semua Menu</h2>
+                <p class="result-info" id="result-info">0 menu ditemukan</p>
+                <div class="menu-container" id="menu-list"></div>
+                <div class="empty-state" id="menu-empty-state" style="display:none;">
+                    <h3>Menu tidak ditemukan</h3>
+                    <p>Coba ganti kata kunci atau reset filter.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p><a href="#">Back to Top</a></p><br>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="gettin-icon.ico" alt="Gettin Logo">
+                    <p>Gettin</p>
+                </div>
+                <p>Pesan makananmu di kantin tanpa ribet antri</p>
+            </div>
+
+            <div class="footer-topright">
+                <div class="footer-nav">
+                    <h3>Navigation</h3>
+                    <a href="index.html">Beranda</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="inventory.html">Inventory</a>
+                    <a href="kontak.html">Kontak</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Jl. Kalimantan No.37, Sumbersari, Jember</p>
+                    <p>gettinmefood@gmail.com</p>
+                    <p>(201) 372-3702</p>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <div class="footer-bottom">
+            <p>© Copyright by Gettin 2026</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+        <p class="mysign">Crafted with ❤️ by Kamelia</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kamelia">
+    <meta name="description" content="Halaman admin menu Gettin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Menu - Gettin</title>
+    <link rel="icon" href="gettin-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="gettin-icon.ico" alt="Gettin Logo">
+                <p>Gettin</p>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="pesanan.html">Pesanan</a></li>
+                <li class="active"><a href="inventory.html">Inventory</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="actions">
+                <a href="keranjang.html" class="cart-link" aria-label="Keranjang">
+                    <img src="shopping-cart.ico" alt="keranjang" width="25">
+                    <span class="cart-badge" data-cart-count>0</span>
+                </a>
+                <a href="inventory.html" class="profile-link" aria-label="Profil admin"><span class="profile-icon"></span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="inventory-page">
+        <section class="inventory-hero">
+            <div>
+                <h2>Kelola Menu Kantin</h2>
+                <p class="subtitle">Tambah, edit, hapus, cari, dan filter menu yang tampil di aplikasi Gettin.</p>
+            </div>
+        </section>
+
+        <section class="stats-section inventory-stats-wrap">
+            <h2>Statistik Menu</h2>
+            <div class="stats-grid" id="inventory-stats"></div>
+        </section>
+
+        <div class="inventory-layout">
+            <section class="inventory-form-card">
+                <h3 id="inventory-form-title">Tambah Menu</h3>
+                <p class="form-error" id="inventory-form-error"></p>
+                <form id="inventory-form" class="inventory-form-grid">
+                    <input type="hidden" id="menu-id">
+                    <div>
+                        <label for="menu-code">Kode Menu</label>
+                        <input type="text" id="menu-code" class="search-input" placeholder="MNU009">
+                    </div>
+                    <div>
+                        <label for="menu-name">Nama Menu</label>
+                        <input type="text" id="menu-name" class="search-input" placeholder="Mie Goreng Spesial">
+                    </div>
+                    <div>
+                        <label for="menu-category">Kategori</label>
+                        <input type="text" id="menu-category" class="search-input" placeholder="Nasi / Minuman / Snack">
+                    </div>
+                    <div>
+                        <label for="menu-vendor">Vendor</label>
+                        <input type="text" id="menu-vendor" class="search-input" placeholder="Kantin Barokah">
+                    </div>
+                    <div>
+                        <label for="menu-price">Harga</label>
+                        <input type="number" id="menu-price" class="search-input" placeholder="12000">
+                    </div>
+                    <div>
+                        <label for="menu-image">URL / path gambar</label>
+                        <input type="text" id="menu-image" class="search-input" placeholder="img/nasi-goreng.jpg">
+                    </div>
+                    <div class="full-width">
+                        <label for="menu-description">Deskripsi</label>
+                        <textarea id="menu-description" class="search-input inventory-textarea" placeholder="Deskripsi singkat menu"></textarea>
+                    </div>
+                    <div class="inventory-checks full-width">
+                        <label><input type="checkbox" id="menu-available" checked> Tersedia</label>
+                        <label><input type="checkbox" id="menu-popular"> Tampilkan sebagai menu populer</label>
+                    </div>
+                    <div class="inventory-form-actions full-width">
+                        <button type="submit" class="btn" id="inventory-submit-btn">Simpan Menu</button>
+                        <button type="button" class="clear-btn" id="inventory-cancel-btn">Batal Edit</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="inventory-table-card">
+                <div class="filter-bar inventory-toolbar">
+                    <input type="text" id="inventory-search-input" class="search-input" placeholder="Cari nama menu, kode, atau vendor...">
+                    <select id="inventory-category-filter" class="filter-select">
+                        <option>Semua Kategori</option>
+                    </select>
+                    <select id="inventory-status-filter" class="filter-select">
+                        <option>Semua Status</option>
+                        <option>Tersedia</option>
+                        <option>Nonaktif</option>
+                    </select>
+                </div>
+                <p class="result-info" id="inventory-result-info">0 menu ditampilkan</p>
+                <div class="table-container">
+                    <table class="order-table inventory-table">
+                        <thead>
+                            <tr>
+                                <th>Kode</th>
+                                <th>Nama Menu</th>
+                                <th>Kategori</th>
+                                <th>Vendor</th>
+                                <th>Harga</th>
+                                <th>Populer</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inventory-table-body"></tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p><a href="#">Back to Top</a></p><br>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="gettin-icon.ico" alt="Gettin Logo">
+                    <p>Gettin</p>
+                </div>
+                <p>Pesan makananmu di kantin tanpa ribet antri</p>
+            </div>
+            <div class="footer-topright">
+                <div class="footer-nav">
+                    <h3>Navigation</h3>
+                    <a href="index.html">Beranda</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="inventory.html">Inventory</a>
+                    <a href="kontak.html">Kontak</a>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Jl. Kalimantan No.37, Sumbersari, Jember</p>
+                    <p>gettinmefood@gmail.com</p>
+                    <p>(201) 372-3702</p>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <div class="footer-bottom">
+            <p>© Copyright by Gettin 2026</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+        <p class="mysign">Crafted with ❤️ by Kamelia</p>
+    </footer>
+</body>
+</html>
