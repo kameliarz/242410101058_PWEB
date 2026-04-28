@@ -6,6 +6,9 @@ Weekly assignments and progress for Web Programming class.
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![PHP](https://img.shields.io/badge/PHP-8.5-777BB4)
+![Blade](https://img.shields.io/badge/Blade-Laravel-red)
 
 ## Weekly Progress
 - Task 01 - Introduction
