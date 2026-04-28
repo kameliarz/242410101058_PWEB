@@ -8,7 +8,8 @@ Weekly assignments and progress for Web Programming class.
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
 
 ## Weekly Progress
-- Week 01 - Introduction
-- Week 02 – HTML Basics [📂](https://github.com/kameliarz/242410101058_PWEB/tree/main/tugas1_week2)
-- Week 03 - CSS [📂](https://github.com/kameliarz/242410101058_PWEB/tree/main/tugas2_week3)
-- Week 04 - (Coming soon)
+- Task 01 - Introduction
+- Task 02 – HTML Basics [📂](https://github.com/kameliarz/242410101058_PWEB/tree/main/tugas1_week2)
+- Task 03 - CSS [📂](https://github.com/kameliarz/242410101058_PWEB/tree/main/tugas2_week3)
+- Task 04 - Laravel [📂](https://github.com/kameliarz/242410101058_PWEB/blob/main/tugas4/tugas4_1058.pdf)
+- Task 05 - Coming Soon
