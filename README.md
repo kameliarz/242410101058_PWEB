@@ -14,5 +14,6 @@ Weekly assignments and progress for Web Programming class.
 * Task 01 – HTML Basics [📂](https://github.com/kameliarz/242410101058_PWEB/tree/main/tugas1_week2)
 * Task 02 - CSS [📂](https://github.com/kameliarz/242410101058_PWEB/tree/main/tugas2_week3)
 * Task 03 - JS [📂](https://github.com/kameliarz/242410101058_PWEB/tree/main/tugas3)
-* Task 04 - Laravel [📂](https://github.com/kameliarz/242410101058_PWEB/blob/main/tugas4/tugas4_1058.pdf) (PDF)
-* Task 05 - Coming Soon
+* Task 04 - Laravel Aktivitas 1&2 [📂](https://github.com/kameliarz/242410101058_PWEB/blob/main/tugas4/tugas4_1058.pdf) (PDF)
+* Task 05 - Laravel Aktivitas 3&4 [📂](https://github.com/kameliarz/242410101058_PWEB/blob/main/tugas5/tugas5_1058.pdf) (PDF)
+* Task 06 - Coming Soon
