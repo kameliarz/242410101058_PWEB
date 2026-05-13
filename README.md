@@ -16,4 +16,4 @@ Weekly assignments and progress for Web Programming class.
 * Task 03 - JS [📂](https://github.com/kameliarz/242410101058_PWEB/tree/main/tugas3)
 * Task 04 - Laravel Aktivitas 1&2 [📂](https://github.com/kameliarz/242410101058_PWEB/blob/main/tugas4/tugas4_1058.pdf) (PDF)
 * Task 05 - Laravel Aktivitas 3&4 [📂](https://github.com/kameliarz/242410101058_PWEB/blob/main/tugas5/tugas5_1058.pdf) (PDF)
-* Task 06 - Coming Soon
+* Task 06 - Laravel Aktivitas 5&6 [📂](https://github.com/kameliarz/242410101058_PWEB/blob/main/tugas6/tugas6_1058.pdf) (PDF)
